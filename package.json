@@ -1,0 +1,36 @@
+{
+  "name": "json-thumb",
+  "version": "0.1.0",
+  "description": "Generate compact type-aware thumbnails of JSON data — optimized for agents querying with jq",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test src/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "shape",
+    "thumbnail",
+    "type-inference",
+    "jq",
+    "summary"
+  ],
+  "author": "Simen Svale Skogsrud",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
