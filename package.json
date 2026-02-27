@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "tsc",
     "test": "node --test src/*.test.js",
     "prepublishOnly": "npm run build"
   },
